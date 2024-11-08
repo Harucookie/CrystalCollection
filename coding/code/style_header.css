@@ -1,0 +1,59 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    }
+
+body{
+    background: url("../image/fond.jpg") no-repeat center center fixed;
+    background-size: cover;
+    height:700px;
+    
+}
+
+header{
+    height:150px;
+}
+
+.top{
+        display: flex;
+        font-size: 20px;
+        height: 100px;
+        background-color: rgba(109, 109, 109, 0.34);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(3.7px);
+        -webkit-backdrop-filter: blur(3.7px);
+}
+
+.logo{
+    width: 10%;
+}
+
+.test{
+    width: 500px;
+    padding-top: 20px;
+}
+
+.nom{
+    width: 50%;
+    color: #9748d3;
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: italic;
+    text-decoration: none;
+
+}
+
+.Menu{
+    display: flex;
+}
+
+.page{
+    width: 130px;
+    padding-top: 20px;
+    color: #9748d3;
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: italic;
+    text-decoration: none;
+}

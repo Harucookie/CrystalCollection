@@ -1,0 +1,42 @@
+main{
+    margin-left: 250px;
+	height: 100%;
+	width: 70%;
+	border: 1px solid rgb(0, 0, 0);
+	border-radius: 30px;
+	padding: 50px;
+	gap: 10px;
+	background-color: rgba(246, 243, 215, 0.95);
+    color: rgb(0, 0, 0);
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.banner{
+    margin-left: 80px;
+}
+
+.banner p{
+    text-align: center;
+}
+
+.items{
+    display: flex;
+}
+
+.displaycard{
+    display: flex;
+    padding: 4% 10%;
+    width: 500px;
+}
+
+.displayall{
+    display: flex;
+    padding: 3% 0%;
+    width: 500px;
+}
+
+.displaycardtext{padding: 6% 2%;}
+
+.displayalltext{padding: 10% 2%;}
