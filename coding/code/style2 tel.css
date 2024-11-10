@@ -1,0 +1,15 @@
+@media screen and (max-width: 1100px) {
+	main{
+  		margin-left: 7.5%;
+		height: 1170%;
+		width: 85%;
+  		margin-bottom: 50px;
+		border-radius: 30px;
+		padding: 50px;
+		gap: 10px;
+	}
+
+	.banner{
+    	height:150px;
+	}
+}

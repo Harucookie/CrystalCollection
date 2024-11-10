@@ -16,32 +16,34 @@ header{
 }
 
 .top{
-        display: flex;
-        font-size: 20px;
-        height: 100px;
-        background-color: rgba(109, 109, 109, 0.34);
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(3.7px);
-        -webkit-backdrop-filter: blur(3.7px);
+    display: flex;
+    font-size: 20px;
+    height: 100px;
+    background-color: rgba(109, 109, 109, 0.34);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.7px);
+    -webkit-backdrop-filter: blur(3.7px);
 }
 
 .logo{
     width: 10%;
 }
 
+.logo img{
+    width: 70%;
+}
+
 .test{
-    width: 500px;
-    padding-top: 20px;
+    width: 92%;
+    padding-top: 1%;
 }
 
 .nom{
-    width: 50%;
     color: #9748d3;
     font-family: "Merriweather", serif;
     font-weight: 700;
     font-style: italic;
     text-decoration: none;
-
 }
 
 .Menu{
@@ -49,7 +51,7 @@ header{
 }
 
 .page{
-    width: 130px;
+    width: 10%;
     padding-top: 20px;
     color: #9748d3;
     font-family: "Merriweather", serif;
@@ -59,19 +61,15 @@ header{
 }
 
 footer{
-    height:30px; 
+    font-size: 120%;
+    height: 4%;
+    background-color: rgba(109, 109, 109, 0.34);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.7px);
+    -webkit-backdrop-filter: blur(3.7px);
 }
 
-.bot{
-        font-size: 20px;
-        height: 30px;
-        background-color: rgba(109, 109, 109, 0.34);
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(3.7px);
-        -webkit-backdrop-filter: blur(3.7px);
-}
-
-.bot p{
+footer p{
     text-align: center;
     font-family: "Merriweather", serif;
     font-weight: 300;
