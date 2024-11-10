@@ -5,6 +5,7 @@ main{
 	border: 1px solid rgb(0, 0, 0);
 	border-radius: 30px;
 	padding: 50px;
+    margin-bottom: 50px;
 	gap: 10px;
 	background-color: rgba(246, 243, 215, 0.95);
     color: rgb(0, 0, 0);

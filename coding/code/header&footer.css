@@ -57,3 +57,23 @@ header{
     font-style: italic;
     text-decoration: none;
 }
+
+footer{
+    height:30px; 
+}
+
+.bot{
+        font-size: 20px;
+        height: 30px;
+        background-color: rgba(109, 109, 109, 0.34);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(3.7px);
+        -webkit-backdrop-filter: blur(3.7px);
+}
+
+.bot p{
+    text-align: center;
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: italic;
+}
