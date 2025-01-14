@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="header&footer tel.css">
         <link rel="stylesheet" href="style2.css">
         <link rel="stylesheet" href="style2 tel.css">
+        <link rel="stylesheet" href="style popup.css">
         <title>Crystal Collection Carte</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,108 +15,105 @@
     </head>
     <body>
         <header>
-            <div class="top">
+            <div class="top theme">
                 <div class="logo"><a href="index.html"><img src="../image/logo.png" alt="logo"></a></div>
-                    <div class="test">
+                <div class="lien">
                     <a class="nom" href="index.html">Crystal Collection</a>
                     <div class="Menu">
                         <a class="page" href="index.html">Main Page</a>
                         <a class="page" href="carte.html">collection</a>
                     </div>
                 </div>
+                <div class="boutonmode">
+                <img class="boutontheme" src="../image/overlay bouton mode.png" alt="overlay bouton theme">
+                <img class="boutondarkmode hidden" id="boutondarkmode" src="../image/darkmode.png" alt="darkmode bouton">
+                <img class="boutonlightmode" id="boutonlightmode" src="../image/lightmode.png" alt="lightmode bouton">
+                </div>
             </div>
         </header>
-        <main>
+        <main class="theme ">
             <div class="zonedecarte">
                 <div class="crystalGems">
-                    <div class="crystalGems banner"><h1>Crystal Gems</h1></div>
+                    <div class="crystalGems banner theme"><h1>Crystal Gems</h1></div>
                     <div class="container">
                         <div class="card-container">
                             <div class="card-wrapper">
-                                <div class="card ruby">
+                                <div class="card">
                                         <div class="card-front">
-                                            <p>Ruby</p><br>
-                                            <img src="../image/gems/Ruby.png" width="100vw">
+                                            <img src="../image/card/png/ruby back.png" height="300px"> 
                                         </div>
                                         <div class="card-back">
-                                            <img src="../image/icon/Ruby.jpg" width="85%">
+                                            <button class="button theme" data-modal="modal1"><img src="../image/card/png/ruby front.png" height="300px"></button> 
                                         </div>
                                 </div>
                             </div>
                             <div class="card-wrapper">
-                                <div class="card sapphire">
+                                <div class="card">
                                         <div class="card-front">
-                                            <p>Sapphire</p><br>
-                                            <img src="../image/gems/Sapphire.png" width="100vw">
+                                            <img src="../image/card/png/sapphire back.png" height="300px">
                                         </div>
                                         <div class="card-back">
-                                            <img src="../image/icon/Sapphire.jpg" width="85%">
+                                            <button class="button theme" data-modal="modal2"><img src="../image/card/png/sapphire front.png" height="300px"></button>     
                                         </div>
                                 </div>
                             </div>
                             <div class="card-wrapper">
-                                <div class="card pearl">
+                                <div class="card">
                                         <div class="card-front">
-                                            <p>Pearl</p><br>
-                                            <img src="../image/gems/Pearl.png" width="100vw">
+                                            <img src="../image/card/png/pearl back.png" height="300px">
                                         </div>
                                         <div class="card-back">
-                                            <img src="../image/icon/Pearl.jpg" width="85%">
+                                            <button class="button theme" data-modal="modal3"><img src="../image/card/png/pearl front.png" height="300px"></button>  
                                         </div>
                                 </div>
                             </div>
                             <div class="card-wrapper">
-                                <div class="card amethyst">
+                                <div class="card">
                                         <div class="card-front">
-                                            <p>Amethyst</p><br>
-                                            <img src="../image/gems/Amethyst.png" width="100vw">
+                                            <img src="../image/card/png/amethyst back.png" height="300px">
                                         </div>
                                         <div class="card-back">
-                                            <img src="../image/icon/Amethyst.jpg" width="85%">
+                                            <button class="button theme" data-modal="modal4"><img src="../image/card/png/amethyst front.png" height="300px"></button>
                                         </div>
                                 </div>
                             </div>
                             <div class="card-wrapper">
-                                <div class="card steven">
+                                <div class="card">
                                         <div class="card-front">
-                                            <p>Steven</p><br>
-                                            <img src="../image/gems/Steven.png" width="100vw">
+                                            <img src="../image/card/png/steven back.png" height="300px">
                                         </div>
                                         <div class="card-back">
-                                            <img src="../image/icon/Steven.jpg" width="85%">
+                                            <button class="button theme" data-modal="modal5"><img src="../image/card/png/steven front.png" height="300px"></button>
                                         </div>
                                 </div>
                             </div>
                             <div class="card-wrapper">
-                                <div class="card peridot">
+                                <div class="card">
                                         <div class="card-front">
-                                            <p>Péridot</p><br>
-                                            <img src="../image/gems/peridot.png" width="100vw">
+                                            <img src="../image/card/png/peridot back.png" height="300px">
                                         </div>
                                         <div class="card-back">
-                                            <img src="../image/icon/Peridot.jpg" width="85%">
+                                            <button class="button theme" data-modal="modal6"><img src="../image/card/png/peridot front.png" height="300px"></button>
                                         </div>
                                 </div>
                             </div>
                             <div class="card-wrapper">
-                                <div class="card lapis">
+                                <div class="card">
                                         <div class="card-front">
-                                            <p>Lapis Lazuli</p><br>
-                                            <img src="../image/gems/Lapis Lazuli.png" width="100vw">
+                                            <img src="../image/card/png/lapis back.png" height="300px">
                                         </div>
                                         <div class="card-back">
-                                            <img src="../image/icon/Lapis lazuli.jpg" width="85%">
+                                            <button class="button theme" data-modal="modal7"><img src="../image/card/png/lapis front.png" height="300px"></button>
                                         </div>
                                 </div>
                             </div>
                             <div class="card-wrapper">
-                                <div class="card bismuth">
+                                <div class="card">
                                         <div class="card-front">
-                                            <p>Bismuth</p><br>
-                                            <img src="../image/gems/Bismuth.jpg" width="100vw">
+                                            <img src="../image/card/png/bismuth back.png" height="300px">
                                         </div>
                                         <div class="card-back">
-                                            <img src="../image/icon/Bismuth.jpg" width="85%">
+                                            <button class="button theme" data-modal="modal8"><img src="../image/card/png/bismuth front.png" height="300px"></button>
                                         </div>
                                 </div>
                             </div>                            
@@ -123,126 +121,185 @@
                     </div>
                 </div>
                 <div class="diamond">
-                    <div class="diamond banner"><h1>Diamond</h1></div>
+                    <div class="diamond banner theme"><h1>Diamond</h1></div>
                         <div class="container">
                             <div class="card-container">
                                 <div class="card-wrapper">
-                                    <div class="card yellow">
-                                            <div class="card-front">
-                                                <p>Yellow Diamond</p><br>
-                                                <img src="../image/gems/Yellow Diamond.png" width="100vw">
-                                            </div>
-                                            <div class="card-back">
-                                                <img src="../image/icon/yellow diamond.jpg" width="85%">
-                                            </div>
+                                    <div class="card">
+                                        <div class="card-front">
+                                            <img src="../image/card/png/yellow back.png" height="300px">
+                                        </div>
+                                        <div class="card-back">
+                                            <button class="button theme" data-modal="modal9"><img src="../image/card/png/yellow front.png" height="300px"></button>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="card-wrapper">
-                                    <div class="card blue">
-                                            <div class="card-front">
-                                                <p>Blue Diamond</p><br>
-                                                <img src="../image/gems/Blue Diamond.png" width="100vw">
-                                            </div>
-                                            <div class="card-back">
-                                                <img src="../image/icon/blue diamond.jpg" width="85%">
-                                            </div>
+                                    <div class="card">
+                                        <div class="card-front">
+                                            <img src="../image/card/png/blue back.png" height="300px">
+                                        </div>
+                                        <div class="card-back">
+                                            <button class="button theme" data-modal="modal10"><img src="../image/card/png/blue front.png" height="300px"></button>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="card-wrapper">
-                                    <div class="card white">
-                                            <div class="card-front">
-                                                <p>White Diamond</p><br>
-                                                <img src="../image/gems/White Diamond.png" width="100vw">
-                                            </div>
-                                            <div class="card-back">
-                                                <img src="../image/icon/white diamond.jpg" width="85%">
-                                            </div>
+                                    <div class="card">
+                                        <div class="card-front">
+                                            <img src="../image/card/png/white back.png" height="300px">
+                                        </div>
+                                        <div class="card-back">
+                                            <button class="button theme" data-modal="modal11"><img src="../image/card/png/white front.png" height="300px"></button>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="card-wrapper">
-                                    <div class="card pink">
-                                            <div class="card-front">
-                                                <p>Pink Diamond</p><br>
-                                                <img src="../image/gems/Pink Diamond.png" width="100vw">
-                                            </div>
-                                            <div class="card-back">
-                                                <img src="../image/icon/pink diamond.jpg" width="85%">
-                                            </div>
+                                    <div class="card">
+                                        <div class="card-front">
+                                            <img src="../image/card/png/pink back.png" height="300px">
+                                        </div>
+                                        <div class="card-back">
+                                            <button class="button theme" data-modal="modal12"><img src="../image/card/png/pink front.png" height="300px"></button>
+                                        </div>
                                     </div>
                                 </div>                          
                             </div>
                         </div>
                 <div class="fusion">
-                    <div class="diamond banner"><h1>Fusion</h1></div>
-                        <div class="container">
-                            <div class="card-container">
-                                <div class="card-wrapper">
-                                    <div class="card garnet">
-                                        <div class="card-front">
-                                            <p>Garnet</p><br>
-                                            <div class="gemimg">
-                                                <img src="../image/gems/Ruby.png" width="100vw">
-                                                <img src="../image/gems/Sapphire.png" width="100vw">
-                                            </div>
-                                        </div>
-                                        <div class="card-back">
-                                            <p>Ruby + Sapphire</p>
-                                            <img src="../image/icon/garnet.jpg" width="85%">
-                                        </div>
+                    <div class="diamond banner theme"><h1>Fusion</h1></div>
+                    <div class="container">
+                        <div class="card-container">
+                            <div class="card-wrapper">
+                                <div class="card">
+                                    <div class="card-front">
+                                        <img src="../image/card/png/garnet back.png" height="300px">
+                                    </div>
+                                    <div class="card-back">
+                                        <button class="button theme" data-modal="modal13"><img src="../image/card/png/garnet front.png" height="300px"></button>
+                                    </div>
                                 </div>
                             </div>
                             <div class="card-wrapper">
-                                <div class="card opal">
-                                        <div class="card-front">
-                                            <p>Opal</p><br>
-                                                <div class="gemimg">
-                                                    <img src="../image/gems/Amethyst.png" width="100vw">
-                                                    <img src="../image/gems/Pearl.png" width="100vw">
-                                                </div>
-                                        </div>
-                                        <div class="card-back">
-                                            <p>Amethyst + Pearl</p>
-                                            <img src="../image/icon/opal.jpg" width="85%">
-                                        </div>
+                                <div class="card">
+                                    <div class="card-front">
+                                        <img src="../image/card/png/opal back.png" height="300px">
+                                    </div>
+                                    <div class="card-back">
+                                        <button class="button theme" data-modal="modal14"><img src="../image/card/png/opal front.png" height="300px"></button>
+                                    </div>
                                 </div>
                             </div>
                             <div class="card-wrapper">
-                                <div class="card smoky">
-                                        <div class="card-front">
-                                            <p>smoky quartz</p><br>
-                                            <div class="gemimg">
-                                                <img src="../image/gems/Amethyst.png" width="100vw">
-                                                <img src="../image/gems/steven.png" width="100vw">
-                                            </div>
-                                        </div>
-                                        <div class="card-back">
-                                            <p>Amethyst + Steven</p>
-                                            <img src="../image/icon/smoky quartz.jpg" width="85%">
-                                        </div>
+                                <div class="card">
+                                    <div class="card-front">
+                                        <img src="../image/card/png/smoky back.png" height="300px">
+                                    </div>
+                                    <div class="card-back">
+                                        <button class="button theme" data-modal="modal15"><img src="../image/card/png/smoky front.png" height="300px"></button>
+                                    </div>
                                 </div>
                             </div>
                             <div class="card-wrapper">
-                                <div class="card rainbow">
-                                        <div class="card-front">
-                                            <p>Rainbow Quartz</p><br>
-                                            <div class="gemimg">
-                                                <img src="../image/gems/pearl.png" width="100vw">
-                                                <img src="../image/gems/steven.png" width="100vw">
-                                            </div>
-                                        </div>
-                                        <div class="card-back">
-                                            <p>Pearl + Steven</p>
-                                            <img src="../image/icon/Rainbow Quartz.jpg" width="85%">
-                                        </div>
+                                <div class="card">
+                                    <div class="card-front">
+                                        <img src="../image/card/png/rainbow back.png" height="300px">
+                                    </div>
+                                    <div class="card-back">
+                                        <button class="button theme" data-modal="modal16"><img src="../image/card/png/rainbow front.png" height="300px"></button>
+                                    </div>
                                 </div>
                             </div>                          
                         </div>
                     </div>
                 </div>
             </div>
+            <div id="modal1" class="modal">
+                <div class="modal-content">
+                  <img src="../image/card/png/ruby front.png">
+                </div>
+              </div>
+              <div id="modal2" class="modal">
+                <div class="modal-content">
+                  <img src="../image/card/png/sapphire front.png">
+                </div>
+              </div>
+              <div id="modal3" class="modal">
+                <div class="modal-content">
+                  <img src="../image/card/png/pearl front.png">
+                </div>
+              </div>
+              <div id="modal4" class="modal">
+                <div class="modal-content">
+                  <img src="../image/card/png/amethyst front.png">
+                </div>
+              </div>
+              <div id="modal5" class="modal">
+                <div class="modal-content">
+                  <img src="../image/card/png/steven front.png">
+                </div>
+              </div>
+              <div id="modal6" class="modal">
+                <div class="modal-content">
+                  <img src="../image/card/png/peridot front.png">
+                </div>
+              </div>
+              <div id="modal7" class="modal">
+                <div class="modal-content">
+                  <img src="../image/card/png/lapis front.png">
+                </div>
+              </div>
+              <div id="modal8" class="modal">
+                <div class="modal-content">
+                  <img src="../image/card/png/bismuth front.png">
+                </div>
+              </div>
+              <div id="modal9" class="modal">
+                <div class="modal-content">
+                  <img src="../image/card/png/yellow front.png">
+                </div>
+              </div>
+              <div id="modal10" class="modal">
+                <div class="modal-content">
+                  <img src="../image/card/png/blue front.png">
+                </div>
+              </div>
+              <div id="modal11" class="modal">
+                <div class="modal-content">
+                  <img src="../image/card/png/white front.png">
+                </div>
+              </div>
+              <div id="modal12" class="modal">
+                <div class="modal-content">
+                  <img src="../image/card/png/pink front.png">
+                </div>
+              </div>
+              <div id="modal13" class="modal">
+                <div class="modal-content">
+                  <img src="../image/card/png/garnet front.png">
+                </div>
+              </div>
+              <div id="modal14" class="modal">
+                <div class="modal-content">
+                  <img src="../image/card/png/opal front.png">
+                </div>
+              </div>
+              <div id="modal15" class="modal">
+                <div class="modal-content">
+                  <img src="../image/card/png/smoky front.png">
+                </div>
+              </div>
+              <div id="modal16" class="modal">
+                <div class="modal-content">
+                  <img src="../image/card/png/rainbow front.png">
+                </div>
+              </div>
+            </div>
         </main>
-        <footer>
+        <footer class="theme ">
                 <p> © Steven Universe</p>
         </footer>
+        <script src="darkmode.js"></script>
+        <script src="opencard.js"></script>
     </body>
 </html>
