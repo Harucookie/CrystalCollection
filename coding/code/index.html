@@ -3,10 +3,12 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="header&footer.css">
-        <link rel="stylesheet" href="header&footer tel.css">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="style tel.css">
+        <link rel="stylesheet" href="css/header&footer.css">
+        <link rel="stylesheet" href="css/header&footer tel.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style tel.css">
+        <link rel="stylesheet" href="css/popup.css">
+        <link rel="stylesheet" href="css/tabs.css">
         <title>Crystal Collection</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +17,7 @@
     <body>
         <header>
             <div class="top theme">
-                <div class="logo"><a href="index.html"><img src="../image/logo.png" alt="logo" width=100px></a></div>
+                <div class="logo"><a href="index.html"><img src="../image/logo.png" alt="logo"></a></div>
                 <div class="lien">
                 <a class="nom" href="index.html">Crystal Collection</a>
                 <div class="Menu">
@@ -25,28 +27,82 @@
             </div>
             <div class="boutonmode">
                 <img class="boutontheme" src="../image/overlay bouton mode.png" alt="overlay bouton theme">
-                <img class="boutondarkmode hidden" id="boutondarkmode" src="../image/darkmode.png" alt="darkmode bouton">
-                <img class="boutonlightmode" id="boutonlightmode" src="../image/lightmode.png" alt="lightmode bouton">
+                <div id="boutontranslate">
+                    <img class="boutondarkmode hidden" id="boutondarkmode" src="../image/darkmode.png" alt="darkmode bouton">
+                    <img class="boutonlightmode" id="boutonlightmode" src="../image/lightmode.png" alt="lightmode bouton">
+                </div>
+                </div>
+                <div class="connection">
+                    <button class="button theme" data-modal="modal_crea"><img src="../image/photo profil.png"></button>
                 </div>
         </div>
         </header>
         <main class="theme ">
-            <h1 class="home">HOME</h1>
-            <img class="banner" src="../image/banner.png" alt="banniere">
-            <p>Welcome, gems! Here, you can collecte cards of the gems of steven universe. Enjoy your adventure</p>
-            <div class="items">
-                <div class="displaycard"><img src="../image/carte.jpg" alt="carte" width="35px" height="60px">
-                <p class="displaycardtext">16 different cards</p>
+            <ul>
+                <li class="tab tab-Home theme tab-active">Home</li>
+                <li class="tab tab-about theme">About the series...</li>
+                <li class="tab tab-uyezbuibevi theme">Other</li>
+            </ul>
+            <div class="barre"></div>
+            <div class="text">
+            <div id="Home" class="content theme active">
+                <img class="banner" src="../image/banner.png" alt="banniere">
+                <p>Welcome, gems! This is a site dedicated to the animated series Steven Universe, the feature film Steven Universe: The Movie and the epilogue series Steven Universe Future. Here, you can collecte cards of the gems of steven universe. Enjoy your adventure.</p>
+                <div class="items">
+                    <div class="displaycard"><img src="../image/carte.png" alt="carte" width="64px" height="90px">
+                    <p class="displaycardtext">16 different cards</p>
+                    </div>
+                    <div class="displayall">
+                        <img src="../image/Magic Crystal.gif" width="150px">
+                        <p class="displayalltext">collect them all</p>
+                    </div>
+                </div></div>
+            <div id="about" class="content theme">
+                <img class="banner" src="../image/banner.png" alt="banniere">
+                <p>First airing on November 4, 2013, Steven Universe is a slice-of-life story as seen by Steven, the youngest member of the Crystal Gems, a group of magical guardians and protectors of the Universe. The animated series was conceived as part of Cartoon Network Studios' short film development initiative and is created by Rebecca Sugar, a writer and storyboard artist. Sugar is Cartoon Network's first female series creator. <3</p>
             </div>
-            <div class="displayall">
-                <img src="../image/Magic Crystal.gif" width="150px">
-                <p class="displayalltext">collect them all</p>
+            <div id="Other" class="content theme">
+                <p>About me...</p>
             </div>
-        </div>
+            </div>
         </main>
         <footer class="theme ">
+                <img src="../image/logo iim.jpg" height="28px">
                 <p> © Steven Universe</p>
         </footer>
-        <script src="darkmode.js"></script>
+          <div id="modal_crea" class="modal">
+            <div class="modal-content">
+              <div class="form_crea theme">
+                <div class="tittle"><h1>information de creation de compte</h1></div>
+                <form action="" method="post" enctype="multipart/form-data">
+                    <div class="info">
+                        <label for="email">Email : </label>
+                        <br>
+                        <input class="form_container_input" type="email" id="email" name="email" placeholder="votre email">
+                    </div>
+                    <div class="info">
+                        <label for="pseudo">Pseudo : </label>
+                        <br>
+                        <input class="form_container_input" type="text" id="pseudo" name="pseudo" placeholder="votre pseudo">
+                    </div>
+                    <div class="info">
+                        <label for="password">Mot de passe : </label>
+                        <br>
+                        <input class="form_container_input" type="password" id="password" name="password" placeholder="votre mot de passe">
+                    </div>
+                    <div class="info">
+                        <label for="password2">Confirmer le mot de passe : </label>
+                        <br>
+                        <input class="form_container_input" type="password" id="conf_password" name="password" placeholder="votre mot de passe">   
+                    </div>
+                    <input class="form_container_boutton" type="submit" value="envoyer" />
+                </form>
+              </div>
+            </div>
+          </div>
+        <script src="js/darkmode.js"></script>
+        <script src="js/opencard.js"></script>
+        <script src="js/tabs.js"></script>
+        <script src="js/formulaire.js"></script>
     </body>
 </html>

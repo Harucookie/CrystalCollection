@@ -3,11 +3,11 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="header&footer.css">
-        <link rel="stylesheet" href="header&footer tel.css">
-        <link rel="stylesheet" href="style2.css">
-        <link rel="stylesheet" href="style2 tel.css">
-        <link rel="stylesheet" href="style popup.css">
+        <link rel="stylesheet" href="css/header&footer.css">
+        <link rel="stylesheet" href="css/header&footer tel.css">
+        <link rel="stylesheet" href="css/style2.css">
+        <link rel="stylesheet" href="css/style2 tel.css">
+        <link rel="stylesheet" href="css/popup.css">
         <title>Crystal Collection Carte</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,8 +26,12 @@
                 </div>
                 <div class="boutonmode">
                 <img class="boutontheme" src="../image/overlay bouton mode.png" alt="overlay bouton theme">
-                <img class="boutondarkmode hidden" id="boutondarkmode" src="../image/darkmode.png" alt="darkmode bouton">
-                <img class="boutonlightmode" id="boutonlightmode" src="../image/lightmode.png" alt="lightmode bouton">
+                <div id="boutontranslate">
+                    <img class="boutondarkmode hidden" id="boutondarkmode" src="../image/darkmode.png" alt="darkmode bouton">
+                    <img class="boutonlightmode" id="boutonlightmode" src="../image/lightmode.png" alt="lightmode bouton"></div>
+                </div>
+                <div class="connection">
+                    <button class="button theme" data-modal="modal_form"><img src="../image/photo profil.png"></button>
                 </div>
             </div>
         </header>
@@ -214,92 +218,135 @@
                     </div>
                 </div>
             </div>
+            <div id="modal_form" class="modal">
+                <div class="modal-content">
+                  <div class="form_crea theme">
+                    <div class="tittle"><h1>information de creation de compte</h1></div>
+                    <form action="" method="post" enctype="multipart/form-data">
+                        <div class="info">
+                            <label for="email">Email : </label>
+                            <br>
+                            <input class="form_container_input" type="email" id="email" name="email" placeholder="votre email">
+                        </div>
+                        <div class="info">
+                            <label for="pseudo">Pseudo : </label>
+                            <br>
+                            <input class="form_container_input" type="text" id="pseudo" name="pseudo" placeholder="votre pseudo">
+                        </div>
+                        <div class="info">
+                            <label for="password">Mot de passe : </label>
+                            <br>
+                            <input class="form_container_input" type="password" id="password" name="password" placeholder="votre mot de passe">
+                        </div>
+                        <div class="info">
+                            <label for="password2">Confirmer le mot de passe : </label>
+                            <br>
+                            <input class="form_container_input" type="password" id="conf_password" name="password" placeholder="votre mot de passe">   
+                        </div>
+                        <div class="info">
+                            <label>Genre : </label>
+                            <br>
+                                <label for="femme">Femme</label>  
+                                <input class="check" type="radio" id="femme" name="genre"> 
+                                <label for="homme">Homme</label>  
+                                <input class="check" type="radio" id="homme" name="genre">
+                                <label for="autre">autre</label>  
+                                <input class="check" type="radio" id="autre" name="genre">
+                        </div>
+
+                        <input class="form_container_boutton" type="submit" value="envoyer"/>
+                    </form>
+                  </div>
+                </div>
+            </div>
             <div id="modal1" class="modal">
                 <div class="modal-content">
                   <img src="../image/card/png/ruby front.png">
                 </div>
-              </div>
-              <div id="modal2" class="modal">
-                <div class="modal-content">
-                  <img src="../image/card/png/sapphire front.png">
                 </div>
-              </div>
-              <div id="modal3" class="modal">
-                <div class="modal-content">
-                  <img src="../image/card/png/pearl front.png">
+                <div id="modal2" class="modal">
+                    <div class="modal-content">
+                        <img src="../image/card/png/sapphire front.png">
+                    </div>
                 </div>
-              </div>
-              <div id="modal4" class="modal">
-                <div class="modal-content">
-                  <img src="../image/card/png/amethyst front.png">
+                <div id="modal3" class="modal">
+                    <div class="modal-content">
+                        <img src="../image/card/png/pearl front.png">
+                    </div>
                 </div>
-              </div>
-              <div id="modal5" class="modal">
-                <div class="modal-content">
-                  <img src="../image/card/png/steven front.png">
+                <div id="modal4" class="modal">
+                    <div class="modal-content">
+                        <img src="../image/card/png/amethyst front.png">
+                    </div>
                 </div>
-              </div>
-              <div id="modal6" class="modal">
-                <div class="modal-content">
-                  <img src="../image/card/png/peridot front.png">
+                <div id="modal5" class="modal">
+                    <div class="modal-content">
+                        <img src="../image/card/png/steven front.png">
+                    </div>
                 </div>
-              </div>
-              <div id="modal7" class="modal">
-                <div class="modal-content">
-                  <img src="../image/card/png/lapis front.png">
+                <div id="modal6" class="modal">
+                    <div class="modal-content">
+                        <img src="../image/card/png/peridot front.png">
+                    </div>
                 </div>
-              </div>
-              <div id="modal8" class="modal">
-                <div class="modal-content">
-                  <img src="../image/card/png/bismuth front.png">
+                <div id="modal7" class="modal">
+                    <div class="modal-content">
+                        <img src="../image/card/png/lapis front.png">
+                    </div>
                 </div>
-              </div>
-              <div id="modal9" class="modal">
-                <div class="modal-content">
-                  <img src="../image/card/png/yellow front.png">
+                <div id="modal8" class="modal">
+                    <div class="modal-content">
+                        <img src="../image/card/png/bismuth front.png">
+                    </div>
                 </div>
-              </div>
-              <div id="modal10" class="modal">
-                <div class="modal-content">
-                  <img src="../image/card/png/blue front.png">
+                <div id="modal9" class="modal">
+                    <div class="modal-content">
+                        <img src="../image/card/png/yellow front.png">
+                    </div>
                 </div>
-              </div>
-              <div id="modal11" class="modal">
-                <div class="modal-content">
-                  <img src="../image/card/png/white front.png">
+                <div id="modal10" class="modal">
+                    <div class="modal-content">
+                    <img src="../image/card/png/blue front.png">
+                    </div>
                 </div>
-              </div>
-              <div id="modal12" class="modal">
-                <div class="modal-content">
-                  <img src="../image/card/png/pink front.png">
+                <div id="modal11" class="modal">
+                    <div class="modal-content">
+                        <img src="../image/card/png/white front.png">
+                    </div>
                 </div>
-              </div>
-              <div id="modal13" class="modal">
-                <div class="modal-content">
-                  <img src="../image/card/png/garnet front.png">
+                <div id="modal12" class="modal">
+                    <div class="modal-content">
+                        <img src="../image/card/png/pink front.png">
+                    </div>
                 </div>
-              </div>
-              <div id="modal14" class="modal">
-                <div class="modal-content">
-                  <img src="../image/card/png/opal front.png">
+                <div id="modal13" class="modal">
+                    <div class="modal-content">
+                        <img src="../image/card/png/garnet front.png">
+                    </div>
                 </div>
-              </div>
-              <div id="modal15" class="modal">
-                <div class="modal-content">
-                  <img src="../image/card/png/smoky front.png">
+                <div id="modal14" class="modal">
+                    <div class="modal-content">
+                        <img src="../image/card/png/opal front.png">
+                    </div>
                 </div>
-              </div>
-              <div id="modal16" class="modal">
-                <div class="modal-content">
-                  <img src="../image/card/png/rainbow front.png">
+                <div id="modal15" class="modal">
+                    <div class="modal-content">
+                        <img src="../image/card/png/smoky front.png">
+                    </div>
                 </div>
-              </div>
+                <div id="modal16" class="modal">
+                    <div class="modal-content">
+                        <img src="../image/card/png/rainbow front.png">
+                    </div>
+                </div>
             </div>
         </main>
         <footer class="theme ">
+                <img src="../image/logo iim.jpg" height="28px">
                 <p> © Steven Universe</p>
         </footer>
-        <script src="darkmode.js"></script>
-        <script src="opencard.js"></script>
+        <script src="js/darkmode.js"></script>
+        <script src="js/opencard.js"></script>
+        <script src="js/formulaire.js"></script>
     </body>
 </html>

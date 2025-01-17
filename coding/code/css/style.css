@@ -1,12 +1,10 @@
 main{
-    margin-left: 10%;
-	height: 100%;
+    margin: 0 auto;
+	height: 120%;
 	width: 80%;
 	border: 2px solid rgb(255, 255, 255);
 	border-radius: 30px;
-	padding: 50px;
     margin-bottom: 50px;
-	gap: 10px;
 	background-color: rgba(225, 225, 225, 0.99);
     color: rgb(0, 0, 0);
     font-family: "Merriweather", serif;
@@ -15,9 +13,9 @@ main{
 }
 
 .banner{
-    margin-left: 9%;
+    margin: 40px auto;
     width: 80%;
-    height: 35%;
+    height: 40%;
 }
 
 main p{
@@ -30,8 +28,8 @@ main p{
 
 .displaycard{
     display: flex;
-    padding: 4% 10%;
-    width: 500px;
+    padding: 4% 18%;
+    width: 700px;
 }
 
 .displayall{
@@ -40,7 +38,7 @@ main p{
     width: 500px;
 }
 
-.displaycardtext{padding: 6% 2%;}
+.displaycardtext{padding: 12% 2%;}
 
 .displayalltext{padding: 10% 2%;}
 
@@ -48,4 +46,8 @@ main.darkmode {
     border: 2px solid rgb(0, 0, 0);
     background-color: rgba(19, 19, 19, 0.87);
     color: rgb(255, 255, 255);
+  }
+
+  .serie{
+    margin-bottom: 15px;
   }
