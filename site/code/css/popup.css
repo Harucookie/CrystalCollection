@@ -11,7 +11,7 @@
 }
 
 .modal-content {
-  margin: 35px auto;
+  margin: 30px auto;
   width: 30%;
 }
 
@@ -25,8 +25,8 @@
 }
 
 .form_crea{
-  margin-top: 60px;
-  height: 635px;
+  margin-top: 30px;
+  height: 679px;
   width: 500px;
   background-color: rgba(225, 225, 225, 0.9);
   border: 2px solid rgb(0, 0, 0);
@@ -81,4 +81,20 @@
 
 .check{
   margin-right: 5%;
+}
+
+.alerte{
+  display: none;
+  height: 17%;
+  border: 2px solid red;
+  background-color: rgba(212, 0, 0, 0.4);
+}
+
+.alerte .text{
+ display: none;
+ color: antiquewhite;
+}
+
+.active-text{
+  display: block !important;
 }
