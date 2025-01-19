@@ -9,6 +9,7 @@ modalBtns.forEach(function (btn) {
   };
 });
 
+//si l'objet sur le quel on clique possède la classe 'modal' alors on arrête de l'afficher
 window.onclick = function (event) {
   if (event.target.className === "modal") {
     event.target.style.display = "none";

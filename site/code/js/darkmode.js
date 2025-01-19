@@ -5,7 +5,7 @@ let theme = document.getElementsByClassName("theme");
 let boutontranslate = document.getElementById("boutontranslate");
 
 
-
+//quand le bouton darkmode est cliquer rajoute la classe 'darkmode' sur toutes les balises contenant la classe 'theme', ajoute respectivement les classes 'hidden' et 'invertranslate' au bonton darkmode et au boutontranslate (qui permet de faire bouger le bouton darkmode) et enlève respectivement 'hidden' et translate au bouton lightmode et au boutontranslate
 boutondarkmode.addEventListener('click', function() {
     for (let i = 0; i < theme.length; i++) {
         theme[i].classList.remove('darkmode');
@@ -16,7 +16,7 @@ boutondarkmode.addEventListener('click', function() {
     boutontranslate.classList.add('inversetranslate');
     console.log("darkmode cliqué")
 })
-
+//quand le bouton lightmode est cliquer enlève la classe 'darkmode' sur toutes les balises contenant la classe 'theme', enlève respectivement les classes 'hidden' et 'invertranslate' au bonton lightmode et au boutontranslate et rajoute respectivement 'hidden' et translate au bouton darkmode et au boutontranslate
 boutonlightmode.addEventListener('click', function() {
     for (let i = 0; i < theme.length; i++) {
         theme[i].classList.add('darkmode');
